@@ -22,7 +22,7 @@ import (
 	"math"
 	"sort"
 
-	"github.com/dgraph-io/badger/y"
+	"github.com/1lann/badger/y"
 	"github.com/pkg/errors"
 )
 

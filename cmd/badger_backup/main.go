@@ -29,8 +29,8 @@ import "flag"
 
 import "log"
 import "os"
-import "github.com/dgraph-io/badger"
-import "github.com/dgraph-io/badger/y"
+import "github.com/1lann/badger"
+import "github.com/1lann/badger/y"
 
 func main() {
 	// Parse flags

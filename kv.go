@@ -28,9 +28,9 @@ import (
 
 	"golang.org/x/net/trace"
 
-	"github.com/dgraph-io/badger/skl"
-	"github.com/dgraph-io/badger/table"
-	"github.com/dgraph-io/badger/y"
+	"github.com/1lann/badger/skl"
+	"github.com/1lann/badger/table"
+	"github.com/1lann/badger/y"
 	"github.com/pkg/errors"
 )
 
@@ -83,12 +83,12 @@ var ErrValueLogSize = errors.New("Invalid ValueLogFileSize, must be between 1MB 
 
 func exceedsMaxKeySizeError(key []byte) error {
 	return errors.Errorf("Key with size %d exceeded %dMB limit. Key:\n%s",
-		len(key), maxKeySize<<20, hex.Dump(key[:1<<10]))
+		len(key), maxKeySize, hex.Dump(key[:1<<10]))
 }
 
 func exceedsMaxValueSizeError(value []byte, maxValueSize int64) error {
 	return errors.Errorf("Value with size %d exceeded ValueLogFileSize (%dMB). Key:\n%s",
-		len(value), maxValueSize<<20, hex.Dump(value[:1<<10]))
+		len(value), maxValueSize, hex.Dump(value[:1<<10]))
 }
 
 const (

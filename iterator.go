@@ -20,7 +20,7 @@ import (
 	"bytes"
 	"sync"
 
-	"github.com/dgraph-io/badger/y"
+	"github.com/1lann/badger/y"
 )
 
 type prefetchStatus uint8

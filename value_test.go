@@ -24,7 +24,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/dgraph-io/badger/y"
+	"github.com/1lann/badger/y"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/require"
 )

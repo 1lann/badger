@@ -21,7 +21,7 @@ import (
 	"io/ioutil"
 	"sync"
 
-	"github.com/dgraph-io/badger"
+	"github.com/1lann/badger"
 )
 
 var d string = "doc"

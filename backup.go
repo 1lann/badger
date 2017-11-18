@@ -4,9 +4,9 @@ import (
 	"encoding/binary"
 	"io"
 
-	"github.com/dgraph-io/badger/y"
+	"github.com/1lann/badger/y"
 
-	"github.com/dgraph-io/badger/protos"
+	"github.com/1lann/badger/protos"
 )
 
 func writeTo(entry *protos.KVPair, w io.Writer) error {

@@ -22,8 +22,8 @@ import (
 	"io"
 	"math"
 
+	"github.com/1lann/badger/y"
 	"github.com/AndreasBriese/bbloom"
-	"github.com/dgraph-io/badger/y"
 )
 
 var (
